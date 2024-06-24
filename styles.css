@@ -60,16 +60,16 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .container {
     display: flex;
-    height: 100vh;
+    height: 130vh;
 }
 
 #bg-img {
-    width: 700px;
+    width: 800px;
     position: relative;
     background-image: url("./img/halie-west-25xggax4bSA-unsplash.webp");
     background-size: cover;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -79,26 +79,48 @@ p, h1, h2, h3, h4, h5, h6 {
     font-family: "norsebold";
     gap: .5rem;
     background: rgb(0 0 0 / .5);
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
-    font-size: 2rem;
+    font-size: 3rem;
+    margin-top: 15rem;
+    padding: 0 3rem;
 }
 
 
+.content :first-child {
+    margin-top: 10rem;
+    width: 700px;
+}
+
+.content :nth-child(2) {
+    margin-bottom: 2rem;
+}
+
+.content :nth-child(3) {
+    margin-bottom: 3rem;
+
+}
+
+p:not(.login) {
+    font-weight: 645;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
 
 
 
 
 #bg-img img {
-    width: 70px;
-    height: 90px;
-}
-.overlay {
-    position: relative;
-    z-index: 1;
+    width: 95px;
+    height: 125px;
 }
 
 .content {
-    padding: 2rem;
+    padding: 3rem;
+    background-color: var(--form-bg-clr);
+}
+
+form {
+    background-color: white;
 }
